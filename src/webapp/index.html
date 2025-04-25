@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraper Form</title>
+</head>
+<body>
+<h2>Enter a URL and select what to scrape:</h2>
+<form action="ScrapeServlet" method="post">
+    <label>URL:</label>
+    <input type="text" name="url" required><br><br>
+    <input type="checkbox" name="options" value="title"> Title<br>
+    <input type="checkbox" name="options" value="links"> Links<br>
+    <input type="checkbox" name="options" value="images"> Images<br><br>
+    <input type="submit" value="Scrape">
+</form>
+</body>
+</html>
